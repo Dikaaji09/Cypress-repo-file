@@ -28,10 +28,6 @@ describe('ini tes pertamaku', function(){
             .type('ASJ1234')
             .should('have.value', 'ASJ1234')
         
-        cy.get('<button type="submit" class="btn btn-primary">Submit</button>') //dapetin button dengan cara copy element nya
-        cy.focused().click() //fokus kalo kondisi button di form nya ada 1 boleh pakai focused 
-        cy.contains('Submit').click() //element untuk hit button nya
-
         //cara 2 untuk nyari button
         // cy.get('.action-form')
         //     .find('[type="text"]').type('HALFOFF')
