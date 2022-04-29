@@ -26,6 +26,7 @@ describe("testcase SMS Gredu", function(){
 
         //selesai
     });
+    //login negatif case
     it("LOGIN email dengan _ (negatif case)",function(){
         cy.visit('https://sms.sowat.dev/login')
         //mulai untuk code nya dibawah
@@ -37,7 +38,7 @@ describe("testcase SMS Gredu", function(){
             .type('WurP1290').focus()
             .should('have.value','WurP1290').focus()
         
-        cy.get('<button type="submit" class="ant-btn btn btn-gredu-orange btn-block mt-4 ant-btn-submit"><span>Masuk</span></button>')
+        cy.get('.ant-btn')
        
         cy.get('button').click()
         cy.contains("Email dan kata sandi tidak sesuai, mohon ulangi.").should('exist')
@@ -55,7 +56,7 @@ describe("testcase SMS Gredu", function(){
             .type('WurP1290').focus()
             .should('have.value','WurP1290').focus()
         
-        cy.get('<button type="submit" class="ant-btn btn btn-gredu-orange btn-block mt-4 ant-btn-submit"><span>Masuk</span></button>')
+        cy.get('.ant-btn')
        
         cy.get('button').click()
         cy.contains("Email dan kata sandi tidak sesuai, mohon ulangi.").should('exist')
@@ -73,12 +74,11 @@ describe("testcase SMS Gredu", function(){
             .type('WurP1290').focus()
             .should('have.value','WurP1290').focus()
         
-        cy.get('<button type="submit" class="ant-btn btn btn-gredu-orange btn-block mt-4 ant-btn-submit"><span>Masuk</span></button>')
+        cy.get('.ant-btn')
        
         cy.get('.ant-btn').click()
         cy.contains("Email dan kata sandi tidak sesuai, mohon ulangi.").should('exist')
         cy.clearCookies()
-        //cy.screenshot() buat ss gambar
             
     });
 });
