@@ -9,12 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2.4.2
-        
-      #setup node 
-      - name: Setup Node.js environment
-        uses: actions/setup-node@v3.1.1
-        
+        uses: actions/checkout@v2
+               
       - name: Cypress run
         uses: cypress-io/github-action@v2
         with:
