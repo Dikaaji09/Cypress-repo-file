@@ -9,7 +9,6 @@ jobs:
       - uses: actions/checkout@v2
       - uses: cypress-io/github-action@v2
         with:
-          install: false
           start: npm --version
           browser: chrome
           headless: true
