@@ -27,7 +27,7 @@ describe("testcase SMS Gredu", function(){
         //selesai
     });
     //login negatif case
-    it("LOGIN email - negatif case",function(){
+    it("LOGIN emailnegatif case",function(){
         cy.visit('https://sms.sowat.dev/login')
         //mulai untuk code nya dibawah
         cy.get(':nth-child(2) > .form-control-line')
