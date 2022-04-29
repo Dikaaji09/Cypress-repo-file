@@ -1,3 +1,4 @@
+//buat perubahan
 describe("testcase SMS Gredu", function(){
     it("LOGIN (positif case)", function(){
         cy.visit('https://sms.sowat.dev/login')
@@ -25,59 +26,59 @@ describe("testcase SMS Gredu", function(){
 
         //selesai
     });
-    // it("LOGIN email dengan _ (negatif case)",function(){
-    //     cy.visit('https://sms.sowat.dev/login')
-    //     //mulai untuk code nya dibawah
-    //     cy.get(':nth-child(2) > .form-control-line')
-    //         .type('adminkece_@yopmail.com')
-    //         .should('have.value','adminkece_@yopmail.com' )
+    it("LOGIN email dengan _ (negatif case)",function(){
+        cy.visit('https://sms.sowat.dev/login')
+        //mulai untuk code nya dibawah
+        cy.get(':nth-child(2) > .form-control-line')
+            .type('adminkece_@yopmail.com')
+            .should('have.value','adminkece_@yopmail.com' )
 
-    //     cy.get(':nth-child(3) > .form-control-line')
-    //         .type('WurP1290').focus()
-    //         .should('have.value','WurP1290').focus()
+        cy.get(':nth-child(3) > .form-control-line')
+            .type('WurP1290').focus()
+            .should('have.value','WurP1290').focus()
         
-    //     cy.get('<button type="submit" class="ant-btn btn btn-gredu-orange btn-block mt-4 ant-btn-submit"><span>Masuk</span></button>')
+        cy.get('<button type="submit" class="ant-btn btn btn-gredu-orange btn-block mt-4 ant-btn-submit"><span>Masuk</span></button>')
        
-    //     cy.get('button').click()
-    //     cy.contains("Email dan kata sandi tidak sesuai, mohon ulangi.").should('exist')
-    //     cy.clearCookies()
+        cy.get('button').click()
+        cy.contains("Email dan kata sandi tidak sesuai, mohon ulangi.").should('exist')
+        cy.clearCookies()
             
-    // });
-    // it("LOGIN email dengan m double (negatif case)",function(){
-    //     cy.visit('https://sms.sowat.dev/login')
-    //     //mulai untuk code nya dibawah
-    //     cy.get(':nth-child(2) > .form-control-line')
-    //         .type('adminkece@yopmail.comm')
-    //         .should('have.value','adminkece@yopmail.comm' )
+    });
+    it("LOGIN email dengan m double (negatif case)",function(){
+        cy.visit('https://sms.sowat.dev/login')
+        //mulai untuk code nya dibawah
+        cy.get(':nth-child(2) > .form-control-line')
+            .type('adminkece@yopmail.comm')
+            .should('have.value','adminkece@yopmail.comm' )
 
-    //     cy.get(':nth-child(3) > .form-control-line')
-    //         .type('WurP1290').focus()
-    //         .should('have.value','WurP1290').focus()
+        cy.get(':nth-child(3) > .form-control-line')
+            .type('WurP1290').focus()
+            .should('have.value','WurP1290').focus()
         
-    //     cy.get('<button type="submit" class="ant-btn btn btn-gredu-orange btn-block mt-4 ant-btn-submit"><span>Masuk</span></button>')
+        cy.get('<button type="submit" class="ant-btn btn btn-gredu-orange btn-block mt-4 ant-btn-submit"><span>Masuk</span></button>')
        
-    //     cy.get('button').click()
-    //     cy.contains("Email dan kata sandi tidak sesuai, mohon ulangi.").should('exist')
-    //     cy.clearCookies()
+        cy.get('button').click()
+        cy.contains("Email dan kata sandi tidak sesuai, mohon ulangi.").should('exist')
+        cy.clearCookies()
             
-    // });
-    // it("LOGIN email dengan @ double (negatif case)",function(){
-    //     cy.visit('https://sms.sowat.dev/login')
-    //     //mulai untuk code nya dibawah
-    //     cy.get(':nth-child(2) > .form-control-line')
-    //         .type('adminkece@@yopmail.com')
-    //         .should('have.value','adminkece@@yopmail.com' )
+    });
+    it("LOGIN email dengan @ double (negatif case)",function(){
+        cy.visit('https://sms.sowat.dev/login')
+        //mulai untuk code nya dibawah
+        cy.get(':nth-child(2) > .form-control-line')
+            .type('adminkece@@yopmail.com')
+            .should('have.value','adminkece@@yopmail.com' )
 
-    //     cy.get(':nth-child(3) > .form-control-line')
-    //         .type('WurP1290').focus()
-    //         .should('have.value','WurP1290').focus()
+        cy.get(':nth-child(3) > .form-control-line')
+            .type('WurP1290').focus()
+            .should('have.value','WurP1290').focus()
         
-    //     cy.get('<button type="submit" class="ant-btn btn btn-gredu-orange btn-block mt-4 ant-btn-submit"><span>Masuk</span></button>')
+        cy.get('<button type="submit" class="ant-btn btn btn-gredu-orange btn-block mt-4 ant-btn-submit"><span>Masuk</span></button>')
        
-    //     cy.get('.ant-btn').click()
-    //     cy.contains("Email dan kata sandi tidak sesuai, mohon ulangi.").should('exist')
-    //     cy.clearCookies()
-    //     //cy.screenshot() buat ss gambar
+        cy.get('.ant-btn').click()
+        cy.contains("Email dan kata sandi tidak sesuai, mohon ulangi.").should('exist')
+        cy.clearCookies()
+        //cy.screenshot() buat ss gambar
             
-    // });
+    });
 });
