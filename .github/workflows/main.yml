@@ -1,4 +1,4 @@
-Name : Cypress file test
+name : Cypress file test
 on: [push]
 jobs: 
     cypress-run:
